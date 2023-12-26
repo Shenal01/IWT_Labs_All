@@ -1,0 +1,107 @@
+/* Styles for the bookstore website */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0;
+}
+
+#book-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.book {
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+	max-width: 300px;
+	flex: 1 0 250px;
+}
+
+.book h2 {
+	margin-top: 0;
+}
+
+.book p {
+	margin: 10px 0;
+}
+
+.book button {
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.book button:hover {
+	background-color: #006D87;
+}
+
+#cart {
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+	max-width: 300px;
+	flex: 1 0 250px;
+}
+
+#cart h2 {
+	margin-top: 0;
+}
+
+#cart-items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#cart-items li {
+	margin-bottom: 5px;
+}
+
+#cart-total {
+	font-weight: bold;
+}
+
+#checkout-button {
+	background-color: #008CBA;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#checkout-button:hover {
+	background-color: #006D87;
+}
+
+#payment-form {
+	display: none;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin: 10px;
+	max-width: 300px;
+	flex: 1 0 250px;
+}
+
+#payment-form h2 {
+	margin-top: 0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top:

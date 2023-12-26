@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Form</title>
+	<link rel = "stylesheet" type = "text/css"  href = "styless.css" >
+	<link rel = "stylesheet" type = "text/css" href = "Formstyle.css" >
+	<script src = "js\newScript.js" ></script>
+	<script src = "js\scriptN.js"></script>
+
+</head>
+
+<img class = "logo" src = "img\cart.jpg" alt = "shopping cart" width = "200px" height = "200px">
+
+<body>
+<center>
+
+	<h1>Shopping Cart</h1>
+	<h2>The Online Shopping Store</h2>
+
+</center>
+
+<hr id = "line">
+
+<ul = class = "menu">
+	<li = class = "menu"><a href = "indexx.php">Home</a></li>
+	<li = class = "menu"><a href = "newss.html">News</a></li>
+	<li = class = "menu"><a href = "about.php">About</a></li>
+	<li = class = "menu"><a href = "#">Contact Us</a></li>
+	
+</ul>
+
+<br>
+<br/>
+
+<center><h2>Registration Form</h2></center>
+
+<form action="submitRegistration.php" method="POST" onsubmit="return checkPassword()">
+First name:<br/>
+<input type="text" name="firstname" value="First name" required> <br/><br/>
+
+Last name:<br/>
+<input type="text" name="lastname" placeholder="Last name" required> <br><br/>
+
+Gender:<br/>
+<input type="radio" name="gender" value = "Male"> Male
+<input type="radio" name="gender" value = "Female" >Female<br/><br/>
+
+Mobile Number:<br/>
+<input type="phone" name="mobile"  pattern="[0-9]{10}" placeholder="0777777777" required> <br/><br/>
+
+E-mail:<br/>
+<input type="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required> <br><br/>
+
+Address:<br/>
+<textarea name="address" rows="8" cols="50" required></textarea> <br><br/>
+
+Choose Your DOB:<br/>
+<input type="date" name="day" required> <br><br/>
+
+Password:<br/>
+<input type="password" name = "pwdd" id="pwd"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or maximum 10 characters" required> <br/><br/>
+
+Re-enter Password:<br/>
+<input type="password" name = "pwdd" id="cnfrmpwd" required> <br/><br/>
+
+<br><input class="inputStyle" id="checkBox" name = "chkTerms" type="checkbox" onclick = "enableCheckBox()">Accept privacy policy and Terms<br/><br/>
+
+<center><input type="submit" id="submitBtn" name = "btnSub" value="Submit" disabled></center>
+</form>
+
+<hr id = "line">
+
+<footer>Created By<br>Shenal Mario<br><a href = "https://courseweb.sliit.lk/">Visit Us</a></footer>
+
+
+</body>
+
+</html>

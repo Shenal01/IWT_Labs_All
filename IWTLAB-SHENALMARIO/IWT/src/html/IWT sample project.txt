@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Online Bookstore</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Featured Books</h2>
+      <div class="book">
+        <img src="book1.jpg">
+        <h3>The Great Gatsby</h3>
+        <p>by F. Scott Fitzgerald</p>
+        <p>$12.99</p>
+      </div>
+      <div class="book">
+        <img src="book2.jpg">
+        <h3>To Kill a Mockingbird</h3>
+        <p>by Harper Lee</p>
+        <p>$9.99</p>
+      </div>
+      <div class="book">
+        <img src="book3.jpg">
+        <h3>1984</h3>
+        <p>by George Orwell</p>
+        <p>$10.99</p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Online Bookstore</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+//css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  border-right: 1px solid #ccc;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  display: block;
+  padding: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 2em;
+}
+
+.book {
+  display: inline-block;
+  width: 30%;
+  margin: 1em;
+  border: 1px solid #ccc;
+  padding: 1em;
+  text-align: center;
+}
+
+.book img {
+  width: 80%;
+  height: auto;
+}
+
+.book h3 {
+  margin-top: 0;
+}
+
+.book p {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #ccc;
+}
+
+//Java Script
+
+// code to handle a "Buy Now" button
+let buyButton = document.querySelector('.book button');
+buyButton.addEventListener('click', function() {
+  alert('Thank you for your purchase!');
+});

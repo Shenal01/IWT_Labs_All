@@ -1,0 +1,39 @@
+.font1
+{
+	color: black;
+	font-size: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.font2
+{
+	color: blue;
+	font-family: georgia, sans-serif;
+	font-size: 14px;
+}
+
+.fontmain
+{
+	color: red;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+p::first-line{
+	color : red;
+	text-transform: capitalize;
+}
+
+a:hover
+{
+	background-color: lightgreen;
+}
+
+p:hover
+{
+	background-color : black;
+}
+
+h1
+{
+	text-transform: uppercase;
+}
